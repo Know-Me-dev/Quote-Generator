@@ -1,0 +1,108 @@
+
+
+ *, *::before, *::after{
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+     font-family: 'Rubik', sans-serif;
+ }
+ 
+ body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height:100vh;
+     text-align: center;
+    /* background: linear-gradient(to right, #7f472a ,#c1bd56) no-repeat center center/ cover ; */
+     background: url(project-1.jpg) no-repeat center center/ cover ;
+ }
+ 
+ .container{
+   width: 550px;
+   max-height:550px;
+   /* width:90%; */
+ }
+ 
+ .header  {
+     background: linear-gradient(to right, #9f6c4cab, #583b23 );
+     color:white;
+     width: 60%;
+     margin: 20px auto;
+     border: 1px solid white;
+     padding: 10px 0 ;
+     font-size: 1.2rem ;
+     font-weight: 200;
+     border-radius: 15px;
+     box-shadow: 0 0 15px rgba(0,0,0,1);
+    
+ }
+ 
+ h2{
+      
+      font-weight: 600;
+ }
+ 
+ .main-content{
+     border:2px solid transparent;
+     background: rgb(255,255,255, .8);
+     padding: 40px 0;
+     height:300px;
+     border-radius: 15px;
+     box-shadow: 0 0 15px;
+     position: relative;
+     }
+     
+     .main-content .text-area{
+         font-size: 1.2rem;
+         line-height: 1.4;
+         width: 90%;
+         margin: 0 auto;
+        
+      
+     }
+     
+     
+     .main-content .person{
+         font-size: 1.2rem;
+         color:#986244;
+         margin-top: 20px;
+         text-transform: uppercase;
+         
+         
+     }
+     
+     .button-area button {
+         background-color:#986244 ;
+         border: 1px solid transparent;
+         color: white;
+        /*  width: 80px;
+        height:30px; */
+        padding: 7px 14px ;
+        border-radius: 4px; 
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 100ms ease-in, color 100ms ease-in;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     }
+     
+     .button-area button:hover{
+         background-color: transparent;
+         color:#986244 ;
+         border-color:#986244 ;
+     }
+     
+     
+     .button-area button:active{
+         opacity:.6;
+     }
+     
+     
+   @media only screen and (max-width: 600px) {
+   .container{
+       width: 90%;
+   }
+}
